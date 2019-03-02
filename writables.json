@@ -1,5 +1,4 @@
 {
-  "0": "//*[self::writal '_ARG_00_']",
-  "1": "//*[self::wrt '_ARG_00_']",
-  "2": "//*[self::escri '_ARG_00_']"
+  "0": "//*[self::input and contains(@name,'_ARG_00_')]",
+  "1": "//*[self::input and contains(@aria-label,'_ARG_00_')]"
 }

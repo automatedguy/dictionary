@@ -1,0 +1,3 @@
+{
+  "0": "//select//*[self::option and text()='_ARG_00_']"
+}

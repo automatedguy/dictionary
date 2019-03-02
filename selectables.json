@@ -1,5 +1,4 @@
 {
-  "0": "//*[self::option '_ARG_00_']",
-  "1": "//*[self::someoption '_ARG_00_']",
-  "2": "//*[self::ssojsa '_ARG_00_']"
+  "0": "//*[self::select and @name='_ARG_00_']",
+  "1": "//*[self::select and @aria-label='_ARG_00_']"
 }
