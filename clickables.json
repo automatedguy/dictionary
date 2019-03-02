@@ -1,0 +1,5 @@
+{
+  "0": "//*[self::button '_ARG_00_']",
+  "1": "//*[self::radio '_ARG_00_']",
+  "2": "//*[self::icon '_ARG_00_']"
+}
