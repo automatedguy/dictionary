@@ -1,4 +1,6 @@
 {
-  "0": "//*[self::input and contains(@name,'_ARG_00_')]",
-  "1": "//*[self::input and contains(@aria-label,'_ARG_00_')]"
+  "0": "//*[self::input and @name='_ARG_00_']",
+  "1": "//*[self::input and contains(@aria-label,'_ARG_00_')]",
+  "2": "//*[self::label and contains(text(),'_ARG_00_')]/preceding-sibling::input",
+  "3": "//*[self::input and @placeholder='_ARG_00_']"
 }

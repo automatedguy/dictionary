@@ -1,3 +1,4 @@
+import sys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.webdriver import WebDriver
 from locator import Locators
@@ -33,10 +34,14 @@ class Browser:
         for locator in locators:
                 try:
                     element = self._driver.find_element_by_xpath(locator)
+                    print('Found: ' + locator)
                     return element
                 except NoSuchElementException:
                     pass
-        return element
+        if element is None:
+            print("You died when the vine broke")
+            self._driver.close()
+            sys.exit()
 
     def click_element(self, element_id):
         locators = Locators(self._CLICKABLES_, element_id)
