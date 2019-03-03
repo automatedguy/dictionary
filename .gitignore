@@ -1,4 +1,4 @@
 .idea/
 __pycache__/
-locator.pyc
-browser.pyc
+*.pyc
+results

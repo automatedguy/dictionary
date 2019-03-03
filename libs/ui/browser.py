@@ -1,7 +1,7 @@
 import sys
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.webdriver import WebDriver
-from locator import Locators
+from libs.ui.locator import Locators
 
 
 class Browser:
