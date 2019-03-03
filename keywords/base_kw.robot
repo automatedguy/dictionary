@@ -12,10 +12,8 @@ ${OS_TYPE}
 SetUp Os Type
     ${OS_TYPE}=         Get Os Type
     Set Suite Variable  ${OS_TYPE}
-    Log To Console      ${OS_TYPE}
 
 SetUp Chrome Browser
-    Log To Console      ${PATH_DRIVERS}/${OS_TYPE}/${CHROMEDRIVER}
     Create Webdriver    ${CHROMEBROWSER}        executable_path=${PATH_DRIVERS}/${OS_TYPE}/${CHROMEDRIVER}
 
 SetUp Firefox Browser
@@ -30,4 +28,3 @@ Open Home Page
     SetUp Browser
     Go To               ${URL_HTTP_UI}${URL_BASE_UI}
 
-Close Browser
