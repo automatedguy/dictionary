@@ -2,6 +2,7 @@
 
 Resource                    ../setup/base_su.robot
 Library                     ../libs/utils/setup.py
+Library                     ../libs/ui/Browser.py
 
 *** Variables ***
 
@@ -28,3 +29,5 @@ Open Home Page
     SetUp Browser
     Go To               ${URL_HTTP_UI}${URL_BASE_UI}
 
+Enter Text "${text}" In "${element}" Text Box
+    Send Text      ${text}         ${element}
