@@ -28,7 +28,7 @@ class Browser:
             except NoSuchElementException:
                 pass
 
-    def click_element(self, element_id):
+    def click_on_element(self, element_id):
         locators = Locators(self._CLICKABLES_, element_id)
         self.find_element(locators).click()
 
