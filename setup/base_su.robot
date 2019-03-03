@@ -9,7 +9,7 @@ ${CHROMEBROWSER}        Chrome
 ${CHROMEDRIVER}         chromedriver
 
 ${FIREFOXBROWSER}       Firefox
-${GEKKODRIVER}          gekkodriver
+${GECKODRIVER}          geckodriver
 
 ${PATH_DRIVERS}         libs/ui/drivers
 

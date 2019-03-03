@@ -17,7 +17,7 @@ SetUp Chrome Browser
     Create Webdriver    ${CHROMEBROWSER}        executable_path=${PATH_DRIVERS}/${OS_TYPE}/${CHROMEDRIVER}
 
 SetUp Firefox Browser
-    Create Webdriver    ${FIREFOXBROWSER}       executable_path=${PATH_DRIVERS}/${OS_TYPE}/${GEKKODRIVER}
+    Create Webdriver    ${FIREFOXBROWSER}       executable_path=${PATH_DRIVERS}/${OS_TYPE}/${GECKODRIVER}
 
 SetUp Browser
     Run Keyword If      '${BROWSER}' == '${CHROMEBROWSER}'          SetUp Chrome Browser
