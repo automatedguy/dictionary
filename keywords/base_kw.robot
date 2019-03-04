@@ -15,7 +15,10 @@ SetUp Os Type
     Set Suite Variable  ${OS_TYPE}
 
 SetUp Chrome Browser
-    Create Webdriver    ${CHROMEBROWSER}        executable_path=${PATH_DRIVERS}/${OS_TYPE}/${CHROMEDRIVER}
+    ${options}=         Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys, selenium.webdriver
+    Call Method         ${options}              add_argument        --disable-notifications
+    Call Method         ${options}              add_argument        disable-extensions
+    Create Webdriver    ${CHROMEBROWSER}        executable_path=${PATH_DRIVERS}/${OS_TYPE}/${CHROMEDRIVER}      chrome_options=${options}
 
 SetUp Firefox Browser
     Create Webdriver    ${FIREFOXBROWSER}       executable_path=${PATH_DRIVERS}/${OS_TYPE}/${GECKODRIVER}

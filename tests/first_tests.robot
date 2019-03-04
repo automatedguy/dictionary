@@ -24,8 +24,8 @@ Sign Up
 
 Login
     Enter Text "gabriel_cespedes@hotmail.com" In "email" Text Box
-    Sleep   3
     Enter Text "gabi1981ce#10" In "pass" Text Box
-    Sleep   3
     Click On "Log In" Button
     Sleep   3
+
+Post Comment
