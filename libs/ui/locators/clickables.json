@@ -4,5 +4,8 @@
   "3": "//*[self::button and text()='_ARG_00_']",
   "4": "//*[self::input and @aria-label='_ARG_00_']",
   "5": "//*[self::a and text()='_ARG_00_']",
-  "6": "//*[self::div]//span[@class='profile-name' and text()='_ARG_00_']"
+  "6": "//*[self::div]//span[@class='profile-name' and text()='_ARG_00_']",
+  "7": "//*[self::span and @class='_ARG_00_']",
+  "8": "//*[self::a and @aria-label='_ARG_00_']/parent::div",
+  "9": "//div[@class='jawbone-actions']/a[@aria-label='P_ARG_00_']"
 }

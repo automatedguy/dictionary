@@ -19,16 +19,21 @@ Login
     Enter Text "gabigrass" In "Password" Text Box
     Click On "Sign In" Button
     Click On "Gabriel Alejandro" Link
-    Sleep           3
 
 Search Movie
     Set Test Message                Search movie in Netflix
+    Click On "icon-search" Icon
+    Enter Text "friends" In "search-box-input" Text Box
+    Click On "Friends" Movie
 
 Play Movie
     Set Test Message                Play movie in Netflix
+    Click On "Próximo episodio" Button
+    Sleep           30
 
 Stop Movie
     Set Test Message                Stop movie in Netflix
+    Go Back
 
 Logout
     Set Test Message                Logout from Netflix

@@ -31,24 +31,38 @@ SetUp Browser
 
 Open Home Page
     Go To               ${URL_HTTP_UI}${URL_BASE_UI}
-    Wait For Condition  return document.readyState=="complete"
+    Wait For Document Ready
 
 Enter Text "${text}" In "${element}" Text Box
     Send Text           ${text}         ${element}
-    Wait For Condition  return document.readyState=="complete"
+    Wait For Document Ready
+
 
 Select Option "${option}" From "${select}" Drop Down List
     Select Option       ${option}   ${select}
-    Wait For Condition  return document.readyState=="complete"
+    Wait For Document Ready
 
 Click On "${button}" Button
     Click On Element    ${button}
-    Wait For Condition  return document.readyState=="complete"
+    Wait For Document Ready
+
+Click On "${button}" Icon
+    Click On Element    ${button}
+    Wait For Document Ready
+
+Click On "${movie}" Movie
+    Sleep                   5
+    Click On Element    ${movie}
+    Wait For Document Ready
+    sleep                   5
 
 Click On "${option}" Radio Button
     Click On Element    ${option}
-    Wait For Condition  return document.readyState=="complete"
+    Wait For Document Ready
 
 Click On "${link}" Link
     Click On Element    ${link}
+    Wait For Document Ready
+
+Wait For Document Ready
     Wait For Condition  return document.readyState=="complete"
