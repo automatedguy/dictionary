@@ -1,5 +1,7 @@
 {
   "0": "//*[self::input and @name='_ARG_00_']",
   "1": "//*[self::input and @aria-label='_ARG_00_']",
-  "2": "//*[self::label and text()='_ARG_00_']/preceding-sibling::input"
+  "2": "//*[self::label and text()='_ARG_00_']/preceding-sibling::input",
+  "3": "//*[self::input and text()='_ARG_00_']",
+  "4": "//*[self::div]//span[@class='profile-name' and text()='_ARG_00_']"
 }

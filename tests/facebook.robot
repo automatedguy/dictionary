@@ -1,6 +1,6 @@
 
 *** Settings ***
-Documentation       First Example Suite
+Documentation       Facebook Example Suite
 
 Resource            ../keywords/base_kw.robot
 

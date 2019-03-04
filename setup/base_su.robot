@@ -18,7 +18,7 @@ ${BROWSER}              ${CHROMEBROWSER}
 
 # UI SetUp
 ${URL_HTTP_UI}          https://
-${URL_BASE_UI}          facebook.com
+${URL_BASE_UI}          netflix.com
 ${URL_HOME_UI}
 ${URL_PORT_UI}
 
