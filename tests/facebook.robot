@@ -23,8 +23,8 @@ Sign Up
     Sleep   3
 
 Login
-    Enter Text "gabriel_cespedes@hotmail.com" In "email" Text Box
-    Enter Text "gabi1981ce#10" In "pass" Text Box
+    Enter Text "xxxxxxxxxxx" In "email" Text Box
+    Enter Text "xxxxxxxx" In "pass" Text Box
     Click On "Log In" Button
     Sleep   3
 

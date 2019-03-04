@@ -15,8 +15,8 @@ Netflix Suite Setup
 Login
     Set Test Message                Login to Nexflix
     Click On "Sign In" Button
-    Enter Text "gabriel_cespedes@hotmail.com" In "Email or phone number" Text Box
-    Enter Text "gabigrass" In "Password" Text Box
+    Enter Text "xxxxxxxxx" In "Email or phone number" Text Box
+    Enter Text "xxxxxxxxx" In "Password" Text Box
     Click On "Sign In" Button
     Click On "Gabriel Alejandro" Link
 
@@ -34,6 +34,7 @@ Play Movie
 Stop Movie
     Set Test Message                Stop movie in Netflix
     Go Back
+    Sleep           10
 
 Logout
     Set Test Message                Logout from Netflix

@@ -7,5 +7,5 @@
   "6": "//*[self::div]//span[@class='profile-name' and text()='_ARG_00_']",
   "7": "//*[self::span and @class='_ARG_00_']",
   "8": "//*[self::a and @aria-label='_ARG_00_']/parent::div",
-  "9": "//div[@class='jawbone-actions']/a[@aria-label='P_ARG_00_']"
+  "9": "//div[@class='jawbone-actions']/a[@aria-label='_ARG_00_']"
 }
