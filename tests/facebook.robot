@@ -7,25 +7,25 @@ Resource            ../keywords/base_kw.robot
 Suite Setup         SetUp Browser
 Suite Teardown      Close Browser
 
-Test Setup          Open Home Page
-
 *** Test Cases ***
 Sign Up
-    Enter Text "Harry" In "First name" Text Box
-    Enter Text "Wooderson" In "Last name" Text Box
-    Enter Text "4787482832" In "Mobile number or email" Text Box
-    Enter Text "748937489" In "New password" Text Box
-    Select Option "Dec" From "Month" Drop Down List
-    Select Option "20" From "Day" Drop Down List
-    Select Option "1981" From "Year" Drop Down List
-    Click On "Male" Radio Button
-    Click On "Sign Up" Button
+    Given User Open Home Page
+    And Enter Text "Harry" In "First name" Text Box
+    And Enter Text "Wooderson" In "Last name" Text Box
+    And Enter Text "4787482832" In "Mobile number or email" Text Box
+    And Enter Text "748937489" In "New password" Text Box
+    And Select Option "Dec" From "Month" Drop Down List
+    And Select Option "20" From "Day" Drop Down List
+    And Select Option "1981" From "Year" Drop Down List
+    And Click On "Male" Radio Button
+    And Click On "Sign Up" Button
     Sleep   3
 
 Login
-    Enter Text "xxxxxxxxxxx" In "email" Text Box
-    Enter Text "xxxxxxxx" In "pass" Text Box
-    Click On "Log In" Button
+    Given User Open Home Page
+    And Enter Text "01133587357" In "email" Text Box
+    And Enter Text "brian81lopez" In "pass" Text Box
+    And Click On "Log In" Button
     Sleep   3
 
 Post Comment

@@ -29,7 +29,7 @@ SetUp Browser
     ...                 ELSE                                        SetUp Firefox Browser
     Maximize Browser Window
 
-Open Home Page
+User Open Home Page
     Go To               ${URL_HTTP_UI}${URL_BASE_UI}
     Wait For Document Ready
 
@@ -43,6 +43,7 @@ Select Option "${option}" From "${select}" Drop Down List
     Wait For Document Ready
 
 Click On "${button}" Button
+    Sleep    5
     Click On Element    ${button}
     Wait For Document Ready
 
@@ -61,6 +62,7 @@ Click On "${option}" Radio Button
     Wait For Document Ready
 
 Click On "${link}" Link
+    sleep                   5
     Click On Element    ${link}
     Wait For Document Ready
 

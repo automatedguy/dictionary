@@ -9,32 +9,23 @@ Suite Teardown      Close Browser
 *** Keywords ***
 Netflix Suite Setup
     SetUp Browser
-    Open Home Page
 
 *** Test Cases ***
 Login
     Set Test Message                Login to Nexflix
-    Click On "Sign In" Button
-    Enter Text "xxxxxxxxx" In "Email or phone number" Text Box
-    Enter Text "xxxxxxxxx" In "Password" Text Box
-    Click On "Sign In" Button
-    Click On "Gabriel Alejandro" Link
+    When User Open Home Page
+    And Click On "Sign In" Button
+    And Enter Text "gabriel_cespedes@hotmail.com" In "Email or phone number" Text Box
+    And Enter Text "gabigrass" In "Password" Text Box
+    And Click On "Sign In" Button
+    And Click On "Gabriel Alejandro" Link
+    Then pass execution  True
 
 Search Movie
     Set Test Message                Search movie in Netflix
-    Click On "icon-search" Icon
-    Enter Text "friends" In "search-box-input" Text Box
-    Click On "Friends" Movie
-
-Play Movie
-    Set Test Message                Play movie in Netflix
-    Click On "Próximo episodio" Button
-    Sleep           30
-
-Stop Movie
-    Set Test Message                Stop movie in Netflix
-    Go Back
-    Sleep           10
+    When Click On "icon-search" Icon
+    And Enter Text "friends" In "search-box-input" Text Box
+    And Click On "Friends" Movie
 
 Logout
     Set Test Message                Logout from Netflix
